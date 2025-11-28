@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="flex flex-col md:flex-row items-center">
+    <div className="animate-fade-in flex flex-col md:flex-row items-center">
       <Image src="/about.jpg" alt="About Sophie" width={278} height={416} className="m-10 rounded-md" />
       <div className="m-10 text-justify text-lg font-[540]">
         <p>Sophie was born and raised by the sea in Runswick Bay, close to Whitby on the North Yorkshire coast.
