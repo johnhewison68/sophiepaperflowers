@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <div className="flex flex-col md:flex-row-reverse items-center">
         <Image src="/book.jpeg" alt="About Sophie" width={378} height={516} className="m-10 rounded-md" />
-        <div className="m-10 text-justify text-lg font-[540]">
+        <div className=" text-justify text-lg font-[540]">
           <p>Crafting Authentic Paper Flowers
 
             A Journey into Elegant Paper Flower Art.
