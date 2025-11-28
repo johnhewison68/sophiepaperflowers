@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Page() {
   return (
 
-    <div className="animate-fade-in flex flex-col items-center w-full mt-20 space-y-3 text-2xl">
+    <div className="animate-fade-in flex flex-col items-center w-full mt-20 space-y-3 text-2xl pl-5 pr5">
 
       <h1 className="text-4xl">Contact</h1>
       <h2 className="text-2xl">for commissions or to collaborate with me…</h2>
