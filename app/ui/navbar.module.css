@@ -13,7 +13,7 @@
 .hamburger_top,
 .hamburger_middle,
 .hamburger_bottom {
-  content: '';
+  content: "";
   position: absolute;
   width: 32px;
   height: 2px;
@@ -35,8 +35,10 @@
 .open {
   transform: rotate(90deg);
   transform: translateY(0px);
-  position: fixed;
-  right: 25px;
+  top: 0;
+  left: 0;
+  /* position: fixed; */
+  /* right: 32px; */
 }
 
 .open .hamburger_top {

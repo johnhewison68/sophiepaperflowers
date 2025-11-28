@@ -55,7 +55,7 @@ export default function NavBar() {
                 clsx(
                   'tracking-widest  hover:text-amber-500',
                   {
-                    'bg-sky-100 text-blue-600': pathname === link.href,
+                    'border-b-gray-500 border-b': pathname === link.href,
                   },
                 )}  >
               {/* <LinkIcon className="w-6" /> */}
@@ -63,12 +63,6 @@ export default function NavBar() {
             </Link>
           );
         })}
-
-        {/* <Link href="/" className="tracking-widest  hover:text-amber-500">Home</Link>
-        <Link href="/facilities" className="tracking-widest hover:text-amber-500">Facilities</Link>
-        <Link href="/openingtimes" className="tracking-widest hover:text-amber-500">Opening Times</Link>
-        <Link href="/pricing" className="tracking-widest hover:text-amber-500">Pricing & Membership</Link>
-        <Link href="/contact" className="tracking-widest hover:text-amber-500">Contact</Link> */}
 
       </div>
 
@@ -88,19 +82,26 @@ export default function NavBar() {
     {/* mobile menu */}
     <div
       id="menu"
-      className="animate-fade-in fixed hidden inset-0 z-20 flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-slate-600 uppercase divide-y divide-gray-500 opacity-50 bg-stone-300"
+      className="animate-fade-in fixed hidden inset-0 z-20 flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-50 pb-4 tracking-widest text-slate-600 uppercase divide-y divide-gray-500 opacity-50 bg-stone-300"
     >
       {links.map((link) => {
 
         return (
-            <Link
-              onClick={toggleMenu}
-              key={link.name}
-              href={link.href}
-              className="w-full py-3 text-center block hover:text-amber-500">
-              {link.name}
-            </Link>
-          
+          <Link
+            onClick={toggleMenu}
+            key={link.name}
+            href={link.href}
+
+            className={
+              clsx(
+                'w-full py-3 text-center block hover:text-amber-500',
+                {
+                  'font-bold': pathname === link.href,
+                },
+              )}>
+            {link.name}
+          </Link>
+
         );
       })}
 
